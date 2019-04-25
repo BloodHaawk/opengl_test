@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug with CMake",
+      "name": "Debug with CMake lldb",
       "type": "cppdbg",
       "request": "launch",
       "program": "${command:cmake.launchTargetPath}",
@@ -15,6 +15,18 @@
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb",
+    },
+    {
+      "name": "Debug with CMake gdb",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
     }
   ]
 }
