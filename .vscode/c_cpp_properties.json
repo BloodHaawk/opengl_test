@@ -11,7 +11,9 @@
             "compilerPath": "/usr/local/bin/gcc-8",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64"
+            "intelliSenseMode": "clang-x64",
+            "configurationProvider": "vector-of-bool.cmake-tools",
+            "compileCommands": "/Users/wilfriedgrondin/Dropbox/code/opengl_test/build/compile_commands.json"
         },
         {
             "name": "Linux",
@@ -24,7 +26,7 @@
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "gcc-x64",
             "configurationProvider": "vector-of-bool.cmake-tools"
         }
     ],

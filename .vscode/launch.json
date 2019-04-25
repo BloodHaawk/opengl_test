@@ -5,17 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "g++ build and debug active file",
+      "name": "Debug with CMake",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/out",
+      "program": "${command:cmake.launchTargetPath}",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb",
-      "preLaunchTask": "g++ build project"
     }
   ]
 }
