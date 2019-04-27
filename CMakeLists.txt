@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 project("OpenGL Test")
 
-include_directories($(CMAKE_CURRENT_SOURCE_DIR))
+set(CMAKE_CXX_STANDARD 17)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+include_directories($(CMAKE_CURRENT_SOURCE_DIR))
 
 find_package(GLEW REQUIRED)
 if (GLEW_FOUND)
@@ -19,8 +19,5 @@ endif()
 
 find_package(glfw3 REQUIRED)
 
-add_subdirectory(utils)
-
 add_executable(out main.cpp)
 target_link_libraries(out glfw)
-target_link_libraries(out utils)
