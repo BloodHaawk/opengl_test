@@ -19,5 +19,8 @@ endif()
 
 find_package(glfw3 REQUIRED)
 
+file(GLOB SHADERS "${CMAKE_SOURCE_DIR}/shaders/*.glsl")
+file(COPY ${SHADERS} DESTINATION "${CMAKE_BINARY_DIR}/shaders")
+
 add_executable(out main.cpp)
 target_link_libraries(out glfw)
